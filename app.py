@@ -2,6 +2,8 @@ import streamlit as st
 from chains.first_aid_chain import get_first_aid_response
 from utils.safety import emergency_check
 
+groq_key = st.secrets["GROQ_API_KEY"]
+
 st.set_page_config(page_title="First Aid AI Assistant", page_icon="🩺")
 
 st.title("🩺 First Aid AI Assistant")
